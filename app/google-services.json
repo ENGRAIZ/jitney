@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "556907361533",
+    "firebase_url": "https://track-ce9f2-default-rtdb.firebaseio.com",
+    "project_id": "track-ce9f2",
+    "storage_bucket": "track-ce9f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:556907361533:android:207a23d2367cb81e8b3a94",
+        "android_client_info": {
+          "package_name": "com.example.modernjitney"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "556907361533-vp2gq2lfpkuibhsg3113qpn6kl0b56m1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWOfvkJeeS_09JwqN2a0hyD0EP6lj3TDY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "556907361533-k82af90l28a96skuilo30if9a8i814e8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ModernJitney</string>
+    <string name="schedule_eta">SCHEDULE/ETA</string>
+    <string name="passenger_s">PASSENGER/S</string>
+</resources>
