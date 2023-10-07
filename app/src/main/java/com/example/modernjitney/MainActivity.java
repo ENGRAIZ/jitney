@@ -57,6 +57,8 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.TimeZone;
 
+//This is the new File
+
 public class MainActivity extends AppCompatActivity implements GoogleMap.OnMarkerClickListener {
 
     private DatabaseReference mRef;
@@ -65,7 +67,6 @@ public class MainActivity extends AppCompatActivity implements GoogleMap.OnMarke
     private GoogleMap mMap;
     private Marker[] markers = new Marker[3];
 
-    private WebSocketManager webSocketManager;
 
     private LatLngWithLabel[] busStopLocations = {
             new LatLngWithLabel(16.408796647051457, 120.5984680194007, "University of the Cordilleras"),
@@ -95,9 +96,6 @@ public class MainActivity extends AppCompatActivity implements GoogleMap.OnMarke
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        webSocketManager = new WebSocketManager();
-        webSocketManager.startWebSocket();
-
         FirebaseApp.initializeApp(this);
         mMapView = findViewById(R.id.map);
         mMapView.onCreate(savedInstanceState);
@@ -122,7 +120,6 @@ public class MainActivity extends AppCompatActivity implements GoogleMap.OnMarke
         super.onDestroy();
         // Close the WebSocket connection when the activity is destroyed
         mMapView.onDestroy();
-        webSocketManager.closeWebSocket();
     }
 
     private class RetrieveGPSDataTask extends AsyncTask<Void, Void, Void> {
